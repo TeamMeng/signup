@@ -1,4 +1,4 @@
-# Secure Signup & Login using RUST | NextJS | Cookies JWT Auth | Postgres | Sqlx
+# Secure Signup & Login using RUST | Axum | NextJS | Cookies JWT Auth | Postgres | Sqlx
 
 ## 环境设置
 

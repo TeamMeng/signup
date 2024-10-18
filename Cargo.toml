@@ -7,3 +7,31 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.89"
+axum = { version = "0.7.7", features = [
+    "http2",
+    "query",
+    "tracing",
+    "multipart",
+] }
+axum-extra = { version = "0.9.4", features = ["typed-header"] }
+chrono = "0.4.38"
+dotenv = "0.15.0"
+env_logger = "0.11.5"
+hex = "0.4.3"
+jsonwebtoken = "9.3.0"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_json = "1.0.129"
+sha2 = "0.10.8"
+sqlx = { version = "0.8.2", features = [
+    "postgres",
+    "runtime-tokio",
+    "tls-rustls",
+] }
+sqlx-db-tester = "0.5.0"
+thiserror = "1.0.64"
+tokio = { version = "1.40.0", features = ["rt", "rt-multi-thread", "macros"] }
+tower = { version = "0.5.1", features = ["util"] }
+tower-http = { version = "0.6.1", features = ["compression-full", "cors", "trace"] }
+tracing = { version = "0.1.40", features = ["log"] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }

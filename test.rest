@@ -1,0 +1,22 @@
+### create handler
+POST http://127.0.0.1:8080/create
+Content-Type: application/json
+
+{
+    "name": "TeamMeng",
+    "password": "hunter42",
+    "email": "Meng@123.com"
+}
+
+### login handler
+POST http://127.0.0.1:8080/login
+Content-Type: application/json
+
+{
+    "email": "Meng@123.com",
+    "password": "hunter42"
+}
+
+### profile handler
+GET http://127.0.0.1:8080/profile
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImV4cCI6MTcyOTI1NTEzMH0.nZbE38KsrDez8TD79gGsapBOmebfupCAXuzhPBsf1KA
